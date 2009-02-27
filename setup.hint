@@ -1,0 +1,6 @@
+category: Audio Gnome
+requires: cygwin libqt3 libX11_6 mpd
+sdesc: "Qt3 client for the Media Player Daemon"
+ldesc: "QUIMUP is a client for the music player daemon (MPD) written in 
+C++ and Qt3. The program can be used with most Linux desktops but, as 
+a Qt program, is best suited for KDE."

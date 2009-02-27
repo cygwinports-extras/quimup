@@ -1,0 +1,65 @@
+quimup
+------------------------------------------
+QUIMUP is a client for the music player daemon (MPD) written in C++ and 
+Qt3. The program can be used with most Linux desktops but, as a Qt 
+program, is best suited for KDE.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  libqt3-3.3.8b-2
+  libX11_6-1.1.5-2
+  mpd-0.14.2-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  make-3.81-1
+
+Canonical website:
+  http://www.coonsden.com/
+
+Canonical download:
+  http://downloads.sourceforge.net/musicpd/
+
+-------------------------------------------
+
+Build instructions:
+  unpack quimup-0.3.5-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./quimup-0.3.5-X.cygport all
+
+This will create:
+  /usr/src/quimup-0.3.5-X-src.tar.bz2
+  /usr/src/quimup-0.3.5-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/quimup.sh
+  /usr/bin/quimup.exe
+  /usr/share/applications/quimup.desktop
+  /usr/share/doc/quimup-0.3.5/COPYING
+  /usr/share/doc/quimup-0.3.5/ChangeLog
+  /usr/share/doc/quimup-0.3.5/FAQ.txt
+  /usr/share/doc/quimup-0.3.5/README
+  /usr/share/icons/hicolor/128x128/apps/quimup.png
+  /usr/share/icons/hicolor/32x32/apps/quimup.png
+  /usr/share/icons/hicolor/48x48/apps/quimup.png
+  /usr/share/icons/hicolor/64x64/apps/quimup.png
+
+------------------
+
+Port Notes:
+
+----- version 0.3.5-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

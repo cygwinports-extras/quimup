@@ -1,0 +1,21 @@
+inherit qt3
+
+DESCRIPTION="Qt3 client for the Music Player Daemon"
+HOMEPAGE="http://www.coonsden.com/"
+SRC_URI="mirror://sourceforge/musicpd/Quimup-${PV}src.tar.gz"
+SRC_DIR="Quimup-${PV}src/Quimup${PV}"
+
+src_install() {
+	cd ${B}
+	dobin quimup.exe
+
+	for size in 32 48 64 128
+	do
+		insinto /usr/share/icons/hicolor/${size}x${size}/apps
+		newins ${S}/../Icons/quimup${size}.png ${PN}.png
+	done
+
+	make_desktop_entry ${PN} Quimup ${PN} "AudioVideo;Audio;Player;Qt"
+
+	dodoc ${S}/../{COPYING,ChangeLog,FAQ.txt,README}
+}
