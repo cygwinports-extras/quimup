@@ -5,18 +5,20 @@ Qt3. The program can be used with most Linux desktops but, as a Qt
 program, is best suited for KDE.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libqt3-3.3.8b-2
-  libX11_6-1.1.5-2
-  mpd-0.14.2-1
+  cygwin-1.7.0-50
+  libgcc1-4.3.2-2
+  libqt3-3.3.8b-11
+  libstdc++6-4.3.2-2
+  libX11_6-1.2.1-1
+  mpd-0.15-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  binutils-20080624-2
-  cygport-0.4.3-1
-  gcc-core-3.4.4-3
-  gcc-g++-3.4.4-3
-  make-3.81-1
+  binutils-2.19.51-1
+  cygport-0.9.7-1
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  make-3.81-2
 
 Canonical website:
   http://www.coonsden.com/
@@ -44,10 +46,10 @@ Files included in the binary package:
   /etc/postinstall/quimup.sh
   /usr/bin/quimup.exe
   /usr/share/applications/quimup.desktop
-  /usr/share/doc/quimup-0.3.5/COPYING
-  /usr/share/doc/quimup-0.3.5/ChangeLog
-  /usr/share/doc/quimup-0.3.5/FAQ.txt
-  /usr/share/doc/quimup-0.3.5/README
+  /usr/share/doc/quimup/COPYING
+  /usr/share/doc/quimup/ChangeLog
+  /usr/share/doc/quimup/FAQ.txt
+  /usr/share/doc/quimup/README
   /usr/share/icons/hicolor/128x128/apps/quimup.png
   /usr/share/icons/hicolor/32x32/apps/quimup.png
   /usr/share/icons/hicolor/48x48/apps/quimup.png
@@ -57,8 +59,8 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 0.3.5-1 -----
-Initial release for Cygwin.
+----- version 0.3.5-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

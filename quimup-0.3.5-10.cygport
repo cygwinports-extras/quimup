@@ -1,4 +1,4 @@
-inherit qt3
+inherit qt3-qmake
 
 DESCRIPTION="Qt3 client for the Music Player Daemon"
 HOMEPAGE="http://www.coonsden.com/"
