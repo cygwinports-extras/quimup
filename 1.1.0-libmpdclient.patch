@@ -1,0 +1,18 @@
+--- origsrc/quimup_1.1.0_src/quimup.pro	2010-05-03 04:15:17.000000000 -0500
++++ src/quimup_1.1.0_src/quimup.pro	2010-05-25 01:56:06.951558100 -0500
+@@ -25,7 +25,7 @@ TARGET	= $$quote(quimup)
+ CONFIG	-= qt
+ CONFIG	+= qt release
+ BUILD_PATH	= ./build
+-LIBS	= /usr/lib/libmpdclient.so
++LIBS	= -lmpdclient
+ 
+ QMAKE_CFLAGS_RELEASE	-= -O2
+ QMAKE_CXXFLAGS_RELEASE	-= -O2
+@@ -91,4 +91,4 @@ HEADERS	+= src/qm_clicklabel.h \
+ 	src/qm_streamloader.h \
+ 	src/qm_colorpicker.h
+ RESOURCES	+= src/quimup.qrc
+-QT	= core gui network
+\ No newline at end of file
++QT	= core gui network
