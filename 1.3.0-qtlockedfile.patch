@@ -1,0 +1,14 @@
+qtlocalpeer.cpp includes qtlockedfile.cpp
+
+--- origsrc/quimup_1.3.0/quimup.pro	2013-01-28 00:32:00.819988100 -0600
++++ src/quimup_1.3.0/quimup.pro	2013-01-28 00:37:31.752916400 -0600
+@@ -71,8 +71,7 @@ SOURCES += src/main.cpp \
+     src/qm_streamloader.cpp \
+     src/qm_colorpicker.cpp \
+     src/qtlocalpeer.cpp \
+-    src/qtsingleapplication.cpp \
+-    src/qtlockedfile.cpp
++    src/qtsingleapplication.cpp
+ 
+ HEADERS += src/qm_clicklabel.h \
+     src/qm_clickprogressbar.h \

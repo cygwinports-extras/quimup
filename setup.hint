@@ -1,7 +1,0 @@
-category: Audio KDE
-requires: libgcc1 libmpdclient2 libQtCore4 libQtGui4 libQtNetwork4 libstdc++6
-sdesc: "Qt4 Music Player Daemon client"
-ldesc: "Quimup is a client for the music player daemon (MPD) written in 
-C++ and Qt4. The program can be used with most Linux desktops but, as a 
-Qt program, is best suited for KDE. GNOME and Xfce users should have a 
-look at Guimup."

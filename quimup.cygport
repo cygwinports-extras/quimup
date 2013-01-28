@@ -1,0 +1,22 @@
+inherit qt4-qmake
+
+NAME="quimup"
+VERSION=1.3.0
+RELEASE=1
+CATEGORY="Audio"
+SUMMARY="Qt4 Music Player Daemon client"
+DESCRIPTION="Quimup is a client for the music player daemon (MPD) written in
+C++ and Qt4. The program can be used with most Linux desktops but, as a Qt
+program, is best suited for KDE."
+HOMEPAGE="http://www.coonsden.com/"
+SRC_URI="mirror://sourceforge/musicpd/${PN}_${PV}_src.tar.gz"
+SRC_DIR="${PN}_${PV}"
+
+PATCH_URI="1.1.0-libmpdclient.patch  1.3.0-qtlockedfile.patch"
+
+src_install() {
+	cd ${B}
+	dobin quimup.exe
+	dohicolor quimup Icons/quimup*
+	make_desktop_entry quimup Quimup quimup "AudioVideo;Audio;Player;Qt"
+}
